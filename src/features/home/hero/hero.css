@@ -1,0 +1,58 @@
+section.hero {
+  height: 100vh;
+  max-height: 41.1rem;
+  /* max-height: 33.1rem; */
+  background-image: url("./hero.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #1111;
+  background-blend-mode: overlay;
+}
+
+article.hero-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  height: 100%;
+}
+
+section.hero-text {
+  padding: 1rem;
+  text-shadow: 0 0.3rem 0.5rem rgb(0, 0, 0, 0.4);
+}
+
+section.hero-text h1 {
+  font-size: clamp(var(--m-big-font-title), 5vw, var(--d-big-font-title));
+  text-align: center;
+  line-height: clamp(var(--big-line-height), 3.5vw, var(--large-line-height));
+}
+
+section.hero-call-to-action {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+section.hero-call-to-action a {
+  font-size: clamp(var(--m-small-text-size), 1.4vw, var(--d-small-text-size));
+  line-height: clamp(
+    var(--ex-small-line-height),
+    1.95vw,
+    var(--big-line-height)
+  );
+  padding: 1rem;
+  border-radius: 0.8rem;
+  color: white;
+  background-color: #407bff;
+  transition: letter-spacing, outline, var(--normal-transition) linear;
+}
+
+section.hero-call-to-action a:hover {
+  letter-spacing: 0.05rem;
+  outline: 0.1rem solid white;
+}

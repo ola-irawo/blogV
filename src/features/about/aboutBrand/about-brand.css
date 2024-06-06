@@ -1,0 +1,46 @@
+section.about-brand {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin: 0 auto;
+  max-width: 100rem;
+  padding: 2rem;
+}
+
+section.about-brand h2 {
+  font-size: clamp(
+    var(--m-medium-font-title),
+    2.2vw,
+    var(--d-medium-font-title)
+  );
+  line-height: clamp(var(--big-line-height), 3.5vw, var(--ex-big-line-height));
+  text-align: center;
+}
+
+section.about-brand > p {
+  font-size: clamp(var(--m-text-size), 1.6vw, var(--d-small-text-size));
+  line-height: clamp(
+    var(--ex-small-line-height),
+    1.95vw,
+    var(--big-line-height)
+  );
+}
+
+article.about-brand h3 {
+  font-size: clamp(var(--m-small-font-title), 1.8vw, var(--d-small-font-title));
+  line-height: clamp(
+    var(--small-line-height),
+    2.4vw,
+    var(--ex-big-line-height)
+  );
+}
+
+article.about-brand p {
+  font-size: clamp(var(--m-text-size), 1.6vw, var(--d-small-text-size));
+  line-height: clamp(
+    var(--ex-small-line-height),
+    1.95vw,
+    var(--big-line-height)
+  );
+  margin-top: 1rem;
+}

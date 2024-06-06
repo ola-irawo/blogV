@@ -1,0 +1,22 @@
+section.about-hero {
+  height: 100vh;
+  max-height: 51.1rem;
+  max-height: 33.1rem;
+  background-image: url("./about.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #1111;
+  background-blend-mode: overlay;
+  display: grid;
+  place-items: center;
+}
+
+h1.about-hero-title {
+  text-align: center;
+  color: #fff;
+  text-shadow: 0 0.3rem 0.5rem rgb(0, 0, 0, 0.5);
+  font-size: clamp(var(--m-big-font-title), 5vw, var(--d-big-font-title));
+  line-height: clamp(var(--big-line-height), 3.5vw, var(--large-line-height));
+  padding: 2rem;
+}

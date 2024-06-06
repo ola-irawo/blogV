@@ -1,0 +1,101 @@
+section.contact-form {
+  margin-top: 2rem;
+  display: grid;
+  padding: 2.5rem;
+  gap: 3rem;
+}
+
+h2.contact-form {
+  font-size: clamp(
+    var(--m-medium-font-title),
+    2.2vw,
+    var(--d-medium-font-title)
+  );
+  line-height: clamp(var(--big-line-height), 3.5vw, var(--ex-big-line-height));
+}
+
+p.contact-form {
+  font-size: clamp(var(--m-text-size), 1.6vw, var(--d-small-text-size));
+  line-height: clamp(
+    var(--ex-small-line-height),
+    1.95vw,
+    var(--big-line-height)
+  );
+  margin-top: 1rem;
+}
+
+ul.contact-form-list {
+  display: grid;
+  gap: 1.8rem;
+  margin-top: 1rem;
+}
+
+li.contact-form-list-item a {
+  color: black;
+  font-size: clamp(var(--m-small-text-size), 1.4vw, var(--d-small-text-size));
+  line-height: clamp(
+    var(--ex-small-line-height),
+    1.95vw,
+    var(--big-line-height)
+  );
+  display: flex;
+  align-items: center;
+}
+
+li.contact-form-list-item a img {
+  margin-right: 1rem;
+}
+
+form.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  max-width: 50rem;
+  margin: 0 auto;
+  width: 100%;
+}
+
+label.contact-form-label {
+  font-size: clamp(var(--m-small-font-title), 1.8vw, var(--d-small-font-title));
+  line-height: clamp(
+    var(--small-line-height),
+    2.4vw,
+    var(--ex-big-line-height)
+  );
+}
+
+form.contact-form input,
+form.contact-form textarea {
+  padding: 2rem;
+  border: 0.1rem solid black;
+  border-radius: 0.2rem;
+  font-size: clamp(var(--m-text-size), 1.6vw, var(--d-small-text-size));
+  line-height: clamp(
+    var(--ex-small-line-height),
+    1.95vw,
+    var(--big-line-height)
+  );
+}
+
+textarea#message {
+  height: clamp(10rem, 10vw, 15rem);
+}
+
+button.contact-form-btn {
+  padding: 2rem;
+  background-color: #407bff;
+  color: #fff;
+  border-radius: 0.2rem;
+  font-size: clamp(var(--m-small-text-size), 1.4vw, var(--d-small-text-size));
+  line-height: clamp(
+    var(--ex-small-line-height),
+    1.95vw,
+    var(--big-line-height)
+  );
+}
+
+@media (min-width: 768px) {
+  section.contact-form {
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  }
+}

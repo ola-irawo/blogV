@@ -1,0 +1,14 @@
+/* h1.post-page {
+  font-size: clamp(var(--m-big-font-title), 5vw, var(--d-big-font-title));
+  line-height: clamp(var(--big-line-height), 3.5vw, var(--large-line-height));
+  margin-top: 2rem;
+} */
+/* 
+img.post-page {
+  width: 100%;
+  height: 100vh;
+  max-height: 51.1rem;
+  max-height: 33.1rem;
+  margin-top: 2rem;
+  object-position: center;
+} */

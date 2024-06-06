@@ -1,0 +1,109 @@
+article.post-card-container {
+  /* max-width: 70rem; */
+  width: 100%;
+  min-height: 40rem;
+  box-shadow: 0.2rem 0.3rem 0.5rem rgb(0, 0, 0, 0.3);
+  border-radius: 0.5rem;
+  transition: transform var(--normal-transition) ease-in-out;
+  cursor: pointer;
+  display: grid;
+  gap: 2rem;
+}
+
+article.post-card-container:hover {
+  transform: scale(1.01);
+}
+
+img.post-img {
+  width: 100%;
+  height: clamp(20rem, 30vw, 30rem);
+  object-fit: cover;
+}
+
+div.post-card-details {
+  padding: 0 1rem;
+  margin-top: 1rem;
+}
+
+h3.post-name {
+  font-size: clamp(var(--m-small-font-title), 1.8vw, var(--d-small-font-title));
+  line-height: clamp(
+    var(--small-line-height),
+    2.4vw,
+    var(--ex-big-line-height)
+  );
+  text-align: center;
+}
+
+p.post-content {
+  font-size: clamp(var(--m-text-size), 1.6vw, var(--d-small-text-size));
+  line-height: clamp(
+    var(--ex-small-line-height),
+    1.95vw,
+    var(--big-line-height)
+  );
+  /* padding: 0 1rem; */
+  width: 90%;
+  display: flex;
+  margin: 0 auto;
+  margin-top: 1rem;
+}
+
+a.post-card-read-more {
+  display: flex;
+  margin: 0 auto;
+  font-size: clamp(var(--m-text-size), 1.6vw, var(--d-small-text-size));
+  line-height: clamp(
+    var(--ex-small-line-height),
+    1.95vw,
+    var(--big-line-height)
+  );
+  transition: transform var(--normal-transition) ease-in;
+  color: #407bff;
+  outline: 0.1rem solid #3335;
+  padding: 0.2em clamp(0.8rem, 1vw, 2rem);
+  border-radius: 0.1rem;
+}
+
+a.post-card-read-more:hover {
+  transform: scale(0.9);
+}
+
+footer.post-card-author-info {
+  margin-top: 1rem;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 0.1rem solid #3332;
+}
+
+footer.post-card-author-info div {
+  display: flex;
+  align-items: center;
+}
+
+img.post-card-author {
+  width: clamp(3rem, 3vw, 8rem);
+  height: clamp(3rem, 3vw, 8rem);
+  border-radius: 50%;
+}
+
+h4.past-card-author-name {
+  margin-left: clamp(0.3rem, 1vw, 1rem);
+  font-size: clamp(var(--m-text-size), 1.6vw, var(--d-small-text-size));
+  line-height: clamp(
+    var(--ex-small-line-height),
+    1.95vw,
+    var(--big-line-height)
+  );
+}
+
+time.post-date {
+  font-size: 1.3rem;
+  line-height: clamp(
+    var(--ex-small-line-height),
+    1.95vw,
+    var(--big-line-height)
+  );
+}
