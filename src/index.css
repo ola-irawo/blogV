@@ -1,13 +1,167 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  scroll-behavior: smooth;
+  line-height: 1.15; /* 1 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  /* global-varible */
+  /* font-weight */
+  --ex-small-fw: 400;
+  --small-fw: 500;
+  --normal-fw: 600;
+  --heavy-fw: 700;
+
+  /* line-height */
+  --ex-small-line-height: 1.95rem;
+  --small-line-height: 2.438rem;
+  --big-line-height: 3.526rem;
+  --ex-big-line-height: 4.3rem;
+  --large-line-height: 6.5rem;
+
+  /* transiton */
+  --fast-transition: 0.3s;
+  --normal-transition: 0.6s;
+  --slow-transition: 1s;
+
+  /* color */
+  /* background-color */
+
+  /* mobile-fonts */
+  --m-text-size: 1.6rem;
+  --m-small-text-size: 1.4rem;
+  /* --m-medium-text-size: 1.6rem; */
+
+  --m-small-font-title: 1.8rem;
+  --m-medium-font-title: 2.2rem;
+  --m-big-font-title: 2.4rem;
+
+  /* desktop-fonts */
+  /* --d-nav-font: 1.6rem;
+  --d-heading-font: 32px;
+  --d-subhead-font: 24px;
+  --d-text-font: 16px; */
+  --d-small-text-size: 1.8rem;
+  --d-small-font-title: 2.2rem;
+  --d-medium-font-title: 3.6rem;
+  --d-big-font-title: 5rem;
+}
+
+main {
+  display: block;
+}
+
+abbr[title] {
+  border-bottom: none; /* 1 */
+  text-decoration: underline; /* 2 */
+  text-decoration: underline dotted; /* 2 */
+}
+
+img {
+  border-style: none;
+}
+
+a {
+  text-decoration: none;
+  background-color: transparent;
+  cursor: pointer !important;
+}
+
+a,
+button {
+  cursor: pointer;
+  font-family: inherit;
+  border: none;
+  outline: none;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+input,
+textarea {
+  outline: none;
+  border: none;
+  resize: none;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit; /* 1 */
+  font-size: 100%; /* 1 */
+  line-height: 1.15; /* 1 */
+  margin: 0; /* 2 */
+}
+
+textarea::-webkit-scrollbar {
+  display: none;
+}
+
+button,
+select {
+  /* 1 */
+  text-transform: none;
+}
+
+li {
+  list-style-type: none;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box; /* 1 */
+  padding: 0; /* 2 */
+}
+
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/* [type="search"] {
+  -webkit-appearance: textfield;
+  outline-offset: -2px; 
+} */
+
+/**
+ * Remove the inner padding in Chrome and Safari on macOS.
+ */
+
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+body {
+  background-color: #fff;
+  max-width: 144rem;
+
+  /* display: flex;
+  justify-content: center;
+  align-content: center; */
 }
