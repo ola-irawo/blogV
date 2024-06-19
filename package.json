@@ -8,6 +8,7 @@
     "@testing-library/user-event": "^13.5.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
+    "react-helmet": "^6.1.0",
     "react-router-dom": "^6.23.1",
     "react-scripts": "5.0.1",
     "react-snap": "^1.23.0",
@@ -22,10 +23,20 @@
   },
   "reactSnap": {
     "inlineCss": true,
-    "include": ["/", "/posts", "/about", "/contact"],
-    "exclude": ["/admin"],
+    "include": [
+      "/",
+      "/posts",
+      "/about",
+      "/contact"
+    ],
+    "exclude": [
+      "/admin"
+    ],
     "cacheDuration": 86400,
-    "puppeteerArgs": ["--no-sandbox", "--disable-setuid-sandbox"]
+    "puppeteerArgs": [
+      "--no-sandbox",
+      "--disable-setuid-sandbox"
+    ]
   },
   "eslintConfig": {
     "extends": [
@@ -44,5 +55,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11"
   }
 }
